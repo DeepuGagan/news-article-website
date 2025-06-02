@@ -1,0 +1,128 @@
+.topStories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 15px 100px;
+}
+
+.bigBox {
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.smallBoxContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.smallBox {
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 245px;
+}
+
+.BoxContent {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.topStory_category {
+  display: flex;
+}
+
+.topStory_category div {
+  padding: 3px 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* .topStory_title {
+  display: flex;
+} */
+
+.topStory_title h2 {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.topStory_title h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.topStory_title h2 a:hover {
+  color: rgb(220, 220, 220);
+  transition: 0.3s;
+}
+
+/* .topStory_date {
+  display: flex;
+} */
+
+.topStory_date p {
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1136px) {
+  .topStories {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 0px;
+  }
+
+  .BoxContent {
+    padding: 5px 10px;
+  }
+
+  .bigBox {
+    height: 250px;
+  }
+
+  .smallBox {
+    height: 150px;
+  }
+
+  .topStory_title h2 {
+    font-size: 17px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
+
+  .topStory_category div {
+    padding: 2px 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .topStory_date p {
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+}
